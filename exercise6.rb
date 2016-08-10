@@ -27,3 +27,12 @@ puts "You don't need to pick up bananas today"
 else
   puts "You need to pick up bananas"
 end
+
+puts grocery_list[1]
+
+# a.sort { |x,y| y <=> x }  #=> ["e", "d", "c", "b", "a"]
+puts grocery_list.sort!
+a = grocery_list.delete_at(3)
+puts grocery_list
+
+puts "*** I deleted #{a}"
